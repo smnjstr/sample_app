@@ -26,6 +26,21 @@ Next, migrate the database:
 $ rails db:migrate
 ```
 
+When using Cloud9 on AWS, you need to prepare the IDE to allow connections to the local web server
+
+```update the config/environments/development.rb file with
+
+Rails.application.configure do
+  .
+  .
+  .
+  # Allow connections to local server.
+  config.hosts.clear
+end
+
+...
+
+
 Finally, run the test suite to verify that everything is working correctly:
 
 ```
