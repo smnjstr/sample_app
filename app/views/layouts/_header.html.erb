@@ -1,0 +1,12 @@
+<header class="navbar navbar-fixed-top navbar-inverse"> <! navbar navbar-fixed-top navbar-inverse are css class in Bootstrap >
+  <div class="container">                               <! container is a class in Bootstrap >
+    <%= link_to "sample_app", root_path, id: "logo" %>        <! adds the CSS id: "logo" - an options hash >
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   root_path %></li>           <! link_to is a Rails Helper, while '#' is a stub URL >
+        <li><%= link_to "Help",   help_path %></li>
+        <li><%= link_to "Login",  '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
