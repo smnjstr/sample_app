@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# Example test data created during rails generate User model,
+# commented out when user email uniqueness test was created, as these
+# repeat.
+
+# one:
+#  name: MyString
+#  email: MyString
+#
+#two:
+#  name: MyString
+#  email: MyString
