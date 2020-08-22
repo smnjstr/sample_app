@@ -11,3 +11,11 @@
 #two:
 #  name: MyString
 #  email: MyString
+
+# Test fixture to create a user leveraging our digest method to mimic
+# the User password digest.
+alexander:
+  name: alexander
+  email: alexander@example.com
+  password_digest: <%= User.digest('password') %>
+
