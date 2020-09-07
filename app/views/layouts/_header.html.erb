@@ -23,14 +23,14 @@
         <! log in menue changes based on if someone is logged in or not >
         <% if logged_in? %>
           <! Links for logged-in users>
-          <li><%= link_to "Users", '#' %></li>
+          <li><%= link_to "Users", users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Profile", user_path(current_user) %></li>
-              <li><%= link_to "Settings", '#' %></li>
+              <li><%= link_to "Settings",edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path, method: :delete %>
