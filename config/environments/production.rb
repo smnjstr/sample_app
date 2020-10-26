@@ -67,7 +67,8 @@ Rails.application.configure do
   
   # Heroku-MailGun Addon send with SMTP via Action Mailer
   config.action_mailer.raise_delivery_errors = true
-
+  host = 'ancient-caverns-81113.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
   :port           => ENV['MAILGUN_SMTP_PORT'],
   :address        => ENV['MAILGUN_SMTP_SERVER'],
