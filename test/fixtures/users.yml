@@ -6,19 +6,19 @@ alexander:
   activated_at: <%=Time.zone.now %>
   admin: true
 
-inactive:
-  name: Inactive User
-  email: inactive@example.com
-  password_digest: <%= User.digest('password') %>
-  admin: false
-  activated: false
-
 betty:
   name: betty
   email: betty@example.com
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%=Time.zone.now %>
+  
+inactive:
+  name: Inactive User
+  email: inactive@example.com
+  password_digest: <%= User.digest('password') %>
+  activated: false
+  admin: false
   
 michael:
   name: Michael Example
